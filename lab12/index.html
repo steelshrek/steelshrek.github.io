@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lr12</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="difficulty">
+        <span>Рівень складності</span>
+        <label>
+          <input type="radio" name="difficulty" value="easy" checked>
+          Початковий
+        </label>
+        <label>
+          <input type="radio" name="difficulty" value="medium">
+          Середній
+        </label>
+        <label>
+          <input type="radio" name="difficulty" value="hard">
+          Високий
+        </label>
+    </div>      
+    <div class="card">
+        <div id="word"></div>
+        <div class="controls">
+            <button id="prev">←</button>
+            <span id="counter"><span id="index">1</span>/10</span>
+            <button id="next">→</button>
+        </div>
+        <input type="text" id="answer" placeholder="переклад...">
+        <div class="stats">
+            <span class="correct">Вірно <span id="correctCount"></span></span>
+            <span class="stats-title">Статистика</span>
+            <span class="wrong">Невірно <span id="wrongCount"></span></span>
+        </div>
+</body>
+</html>
